@@ -12,7 +12,7 @@ public class HelloController {
         model.addAttribute("name", name);
         return "thymeleaf/hello";
     }
-    @RequestMapping("/abc")
+    @RequestMapping("/index")
     public String hello1(Model model, @RequestParam(value="name", required=false, defaultValue="World") String name) {
         model.addAttribute("name", name);
         return "jsp/index";
